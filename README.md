@@ -10,22 +10,30 @@ Linux Listener Instructions
 
 
 Step 1 Install dotnet:
+
 Enter below commands in order:
+
+
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 
 Then run Command in linux to install 2.1
+
+
+
 sudo apt-get update; \
   sudo apt-get install -y apt-transport-https && \
   sudo apt-get update && \
   sudo apt-get install -y aspnetcore-runtime-2.1
 
 Step 2 Run Stealth:
-make stealth directory. Enter the command below:
-mkdir stealth
 
-navigate to diretory, enter cd stealth. Then download git repo. Install git if you dont have it. Enter command below:
+
+make stealth directory. Enter the command: mkdir stealth
+
+navigate to diretory, enter cd stealth. Then download git repo into directory. Install git if you dont have it. Enter command below:
 
 git clone https://github.com/silent06/stealth-Server-3.0.git
 
