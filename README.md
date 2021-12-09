@@ -6,7 +6,9 @@ Review readme.txt found in client files
 Linux Listener Instructions 
 
 
-************Ubuntu 18.04*************************
+***Ubuntu 18.04***
+
+
 Step 1 Install dotnet:
 Enter below commands in order:
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
