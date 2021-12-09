@@ -1,0 +1,1 @@
+enter VPS & stealh port into config.ini. Then copy over to /hdd
