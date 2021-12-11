@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <id>DashVideoMP-London</id>
+  <culture>en-US</culture>
+  <sysexts>
+    <sysext>
+      <name>luaext.xex</name>
+      <tag>LUAXZP</tag>
+    </sysext>
+  </sysexts>
+  <webreportingsampling>100</webreportingsampling>
+  <infomode>Gamertag</infomode>
+  <description2>Browse</description2>
+  <surface>no</surface>
+  <channel>
+    <id>Browse TVM</id>
+    <channeldef layouttemplate="epix://template18hd.xur">
+      <type>online</type>
+      <vui>
+        <responsetype>Maintain</responsetype>
+        <message>Launching ...</message>
+      </vui>
+      <slotgroup>
+        <slot>
+          <name>Movie Genres</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Movie Genres...</message>
+          </vui>
+          <description>Movie Genres</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>Common://ico_64x_settingspreferences.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToEpixManifest</cmd>
+            <param>DashVideoMPGenres-Movies.xml</param>
+            <param2></param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>TV Genres</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching TV Genres...</message>
+          </vui>
+          <description>TV Genres</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>Common://ico_64x_settingspreferences.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToEpixManifest</cmd>
+            <param>DashVideoMPGenres-TV.xml</param>
+            <param2></param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>TC:XV:MS:HotelTransylvania3:F:HotelTransylvania3</name>
+          <vui>
+            <visiblephrase>Hotel Transylvania 3</visiblephrase>
+            <phrase>Hotel Transylvania 3</phrase>
+            <phrase>Hotel Transylvania 3</phrase>
+          </vui>
+          <description>Hotel Transylvania 3</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/0d/12/0d12b090-ca90-47ff-89d4-da8b1f43a2b0.jpg?n=360-HotelTransylvania3-352x264-04.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=f147f80a-0100-11db-89ca-0019b92a3933</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TC:XV:MS:HotelTransylvania3:FRB:HotelTransylvania3</name>
+          <vui>
+            <visiblephrase>Hotel Transylvania 3</visiblephrase>
+            <phrase>Hotel Transylvania 3</phrase>
+            <phrase>Hotel Transylvania 3</phrase>
+          </vui>
+          <description>Hotel Transylvania 3</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/0d/12/0d12b090-ca90-47ff-89d4-da8b1f43a2b0.jpg?n=360-HotelTransylvania3-352x264-04.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=f147f80a-0100-11db-89ca-0019b92a3933</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TC:XV:MP:FH:NewReleaseMovies</name>
+          <vui>
+            <visiblephrase>Nouveautés Films</visiblephrase>
+            <phrase>Nouveautés Films</phrase>
+            <phrase>Nouveautés Films</phrase>
+          </vui>
+          <description>Watch the Latest Hit Movies</description>
+          <rating>-17957139</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/d7/b4/d7b4a280-51ff-4ffe-a254-7ab80d7ea7f2.jpg?n=360-ITChapterTwo-352x264-03.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieHubPage?Id=fl_360newreleases_movies</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TVMEG:XV:MS:HotelTransylvania3:FB:HotelTransylvania3</name>
+          <vui>
+            <visiblephrase>Hotel Transylvania 3</visiblephrase>
+            <phrase>Hotel Transylvania 3</phrase>
+            <phrase>Hotel Transylvania 3</phrase>
+          </vui>
+          <description>Hotel Transylvania 3</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/0d/12/0d12b090-ca90-47ff-89d4-da8b1f43a2b0.jpg?n=360-HotelTransylvania3-352x264-04.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=f147f80a-0100-11db-89ca-0019b92a3933</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Most Popular</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Popular Movies...</message>
+          </vui>
+          <description>Popular Movies</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>Common://ico_64x_popular.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>videosmp:_RootTitle=popular movies;_HideFilter=true;_Param=[SubscriptionLevel];_MethodName=Browse;_PageSize=25;orderBy=MostPopular;desiredMediaItemTypes=MovieType;_SlotCount=200;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Latest Episodes</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Latest Episodes...</message>
+          </vui>
+          <description>Latest Episodes</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>Common://ico_64x_popular.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>videosmp:_RootTitle=latest episodes;_Param=[SubscriptionLevel];_MethodName=Browse;_PageSize=25;_SceneType=NewReleaseSlot;_LatestEpisodesQuery=true;orderBy=releaseDate;desiredMediaItemTypes=TVSeries;_SlotCount=200;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Top Rated Movies</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Top Rated Movies...</message>
+          </vui>
+          <metadata>
+            <property>
+              <name>gradient</name>
+              <value>no</value>
+            </property>
+          </metadata>
+          <description>Top Rated Movies</description>
+          <rating>267242991</rating>
+          <shallowimg>http://epix.xbox.com/shaXam/0201/a2/78/a2784c69-80ef-447a-a715-41dc0d5eaecc.PNG?v=1</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>videosmp:_RootTitle=top rated movies;_Param=[SubscriptionLevel];_MethodName=Browse;_PageSize=25;orderBy=SevenDaysAverageRating;desiredMediaItemTypes=MovieType;_SlotCount=200;_SceneType=TopRatedSlot;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Top Rated TV</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Top Rated TV...</message>
+          </vui>
+          <metadata>
+            <property>
+              <name>gradient</name>
+              <value>no</value>
+            </property>
+          </metadata>
+          <description>Top Rated TV</description>
+          <rating>267242991</rating>
+          <shallowimg>http://epix.xbox.com/shaXam/0201/a2/78/a2784c69-80ef-447a-a715-41dc0d5eaecc.PNG?v=1</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>videosmp:_RootTitle=top rated tv;_Param=[SubscriptionLevel];_MethodName=Browse;_PageSize=25;orderBy=SevenDaysAverageRating;desiredMediaItemTypes=TVSeries;_SlotCount=200;_SceneType=TopRatedSlot;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>TC:XV:MS:FindingDory:F:FindingDory</name>
+          <vui>
+            <visiblephrase>Finding Dory</visiblephrase>
+            <phrase>Finding Dory</phrase>
+            <phrase>Finding Dory</phrase>
+          </vui>
+          <description>Finding Dory</description>
+          <rating>3602</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/56/85/5685a1cc-cba6-42ea-9dbd-963f9ea5bbf6.jpg?n=slot-FindingDory-05-174x130.jpg</shallowimg>
+          <condition>
+            <condition>EcoIsFamily()</condition>
+            <condition>EcoLiveTier(none)</condition>
+          </condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=2d34a409-0100-11db-89ca-0019b92a3933</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TC:XV:MS:FindingDory:FRB:FindingDory</name>
+          <vui>
+            <visiblephrase>Finding Dory</visiblephrase>
+            <phrase>Finding Dory</phrase>
+            <phrase>Finding Dory</phrase>
+          </vui>
+          <description>Finding Dory</description>
+          <rating>3602</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/56/85/5685a1cc-cba6-42ea-9dbd-963f9ea5bbf6.jpg?n=slot-FindingDory-05-174x130.jpg</shallowimg>
+          <condition>
+            <condition>EcoIsFamily()</condition>
+            <condition>EcoLiveTier(none)</condition>
+          </condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=2d34a409-0100-11db-89ca-0019b92a3933</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TC:XV:MP:FH:NewReleaseTV</name>
+          <vui>
+            <visiblephrase>Nouveautés TV</visiblephrase>
+            <phrase>Nouveautés TV</phrase>
+            <phrase>Nouveautés TV</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Browse New TV...</message>
+          </vui>
+          <description>Browse New TV</description>
+          <rating>-17957139</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/ef/f1/eff1ad25-ebbe-4fc6-b9db-6d5dd66e9a4e.jpg?n=slot-TheWalkingDead-S06-10-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:TVHubPage?Id=fl_360newreleases_tv</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TVMEG:XV:MS:FindingDory:FB:FindingDory</name>
+          <vui>
+            <visiblephrase>Finding Dory</visiblephrase>
+            <phrase>Finding Dory</phrase>
+            <phrase>Finding Dory</phrase>
+          </vui>
+          <description>Finding Dory</description>
+          <rating>3602</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/56/85/5685a1cc-cba6-42ea-9dbd-963f9ea5bbf6.jpg?n=slot-FindingDory-05-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=2d34a409-0100-11db-89ca-0019b92a3933</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>TC:XV:MS:Frozen:F:Frozen</name>
+          <vui>
+            <visiblephrase>Frozen (2013)</visiblephrase>
+            <phrase>Frozen</phrase>
+            <phrase>Frozen</phrase>
+          </vui>
+          <description>Frozen</description>
+          <rating>3602</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/7a/94/7a94ab90-e8a2-45a4-b455-b6f7f9d9a51f.jpg?n=slot-Frozen-04-174x130.jpg</shallowimg>
+          <condition>
+            <condition>EcoIsFamily()</condition>
+            <condition>EcoLiveTier(none)</condition>
+          </condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=a7343931-ee07-42d6-b4b5-070c53ca1444</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TC:XV:MS:Frozen:FRB:Frozen</name>
+          <vui>
+            <visiblephrase>Frozen (2013)</visiblephrase>
+            <phrase>Frozen</phrase>
+            <phrase>Frozen</phrase>
+          </vui>
+          <description>Frozen</description>
+          <rating>3602</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/7a/94/7a94ab90-e8a2-45a4-b455-b6f7f9d9a51f.jpg?n=slot-Frozen-04-174x130.jpg</shallowimg>
+          <condition>
+            <condition>EcoIsFamily()</condition>
+            <condition>EcoLiveTier(none)</condition>
+          </condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=a7343931-ee07-42d6-b4b5-070c53ca1444</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TC:XV:MP:FH:FeaturedTV</name>
+          <vui>
+            <visiblephrase>Top Séries TV</visiblephrase>
+            <phrase>Top Séries TV</phrase>
+            <phrase>Top Séries TV</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching See Featured TV...</message>
+          </vui>
+          <description>See Featured TV</description>
+          <rating>-17957139</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/3b/d1/3bd1da33-874c-4d8e-adbd-35568648e33a.jpg?n=slot-RickAndMorty-02-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:TVHubPage?Id=fl_360featured_tv</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>TVMEG:XV:MS:Frozen:FB:Frozen</name>
+          <vui>
+            <visiblephrase>Frozen (2013)</visiblephrase>
+            <phrase>Frozen</phrase>
+            <phrase>Frozen</phrase>
+          </vui>
+          <description>Frozen</description>
+          <rating>3602</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/7a/94/7a94ab90-e8a2-45a4-b455-b6f7f9d9a51f.jpg?n=slot-Frozen-04-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>zune:MovieDetailsPage?Id=a7343931-ee07-42d6-b4b5-070c53ca1444</param>
+            <param2>silver</param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+    </channeldef>
+  </channel>
+</manifest>

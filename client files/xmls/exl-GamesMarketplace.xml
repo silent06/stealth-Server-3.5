@@ -1,0 +1,1088 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <id>exl-GamesMarketplace</id>
+  <culture>en-US</culture>
+  <sysexts>
+    <sysext>
+      <name>luaext.xex</name>
+      <tag>LUAXZP</tag>
+    </sysext>
+  </sysexts>
+  <webreportingsampling>100</webreportingsampling>
+  <surface>no</surface>
+  <channel>
+    <id>Featured</id>
+    <metadata>
+      <property>
+        <name>SearchContext</name>
+        <value>XboxGameItem</value>
+      </property>
+      <property>
+        <name>VuiContext</name>
+        <value>game</value>
+      </property>
+    </metadata>
+    <channeldef layouttemplate="epix://template18hd.xur">
+      <description>featured</description>
+      <type>online</type>
+      <vui>
+        <responsetype>Maintain</responsetype>
+        <message>Launching ...</message>
+      </vui>
+      <slotgroup>
+        <slot>
+          <name>Slot 1 - MPF - My Games</name>
+          <vui>
+            <visiblephrase>My Games</visiblephrase>
+            <phrase>My Games</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching My Games...</message>
+          </vui>
+          <description>My Games</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_controller.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gameslibrary:_RootTitle=%slot_description%;PackageType=1</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 2 - MPF - Videos</name>
+          <vui>
+            <visiblephrase>Add Ons</visiblephrase>
+            <phrase>Add Ons</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Add Ons...</message>
+          </vui>
+          <metadata>
+            <property>
+              <name>transparency</name>
+              <value>yes</value>
+            </property>
+            <property>
+              <name>gradient</name>
+              <value>no</value>
+            </property>
+          </metadata>
+          <description>Add Ons</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/9c/9e/9c9e4b17-2eaf-42f9-ad47-43b385c96424.png?n=AddOns.png</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_SlotType=DLC;_SlotCount=100;_Param=[UserTypes,RatingIds];DetailView=3;CategoryIDs=3027;OrderBy=3;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[18]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GF:GDP:F:PvZGW 1.5</name>
+          <vui>
+            <visiblephrase>Garden Warfare</visiblephrase>
+            <phrase>Garden Warfare</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Plants vs. Zombies Garden Warfare...</message>
+          </vui>
+          <description>Plants vs. Zombies Garden Warfare</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/d8/08/d808ba41-b7e9-413e-a2f5-b2ccc5589ddb.jpg?n=slot-PlantsVsZombies-352x264-02.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802454109c9;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GF:BDE:F2P WoT 12.6</name>
+          <vui>
+            <visiblephrase>World of Tanks</visiblephrase>
+            <phrase>World of Tanks</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Free to Play...</message>
+          </vui>
+          <description>Free to Play</description>
+          <shallowimg>http://compass.xboxlive.com/assets/64/db/64db4a10-cad0-4d10-abea-5242770ce34b.jpg?n=slot-WorldOfTanks-StarterPack-dm-01-352x264.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToEpixManifest</cmd>
+            <param>exl-Free2Play.xml</param>
+            <param2></param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GF:GDP:FB:PvZGW 1.5</name>
+          <vui>
+            <visiblephrase>Garden Warfare</visiblephrase>
+            <phrase>Garden Warfare</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Plants vs. Zombies Garden Warfare...</message>
+          </vui>
+          <description>Plants vs. Zombies Garden Warfare</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/d8/08/d808ba41-b7e9-413e-a2f5-b2ccc5589ddb.jpg?n=slot-PlantsVsZombies-352x264-02.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802454109c9;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 4 - MPF - Avatar Store</name>
+          <vui>
+            <visiblephrase>Avatar Store</visiblephrase>
+            <phrase>Avatar Store</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Avatar Store...</message>
+          </vui>
+          <description>Avatar Store</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_marketplace.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcLaunchFromSystemPackage</cmd>
+            <param>AvatarEditor.xex</param>
+            <param2>storelist:storefront</param2>
+            <param3>silver</param3>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 5 - MPF - Themes</name>
+          <vui>
+            <visiblephrase>Themes</visiblephrase>
+            <phrase>Themes</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Themes...</message>
+          </vui>
+          <description>Themes</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_changetheme.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_SlotType=DLC;_Param=[UserTypes,RatingIds];DetailView=3;OrderBy=3;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;CategoryIds=[3025,3027];MediaTypes=[20]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 6 - MPF - Search Games</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Search Games...</message>
+          </vui>
+          <description>Search Games</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_search.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>search:filter=XboxGameItem</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 7 - MPF - Gamer Pics</name>
+          <vui>
+            <visiblephrase>Gamer Pics</visiblephrase>
+            <phrase>Gamer Pics</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Gamer Pics...</message>
+          </vui>
+          <description>Gamer Pics</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_pic.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_SlotType=DLC;_Param=[UserTypes,RatingIds];DetailView=3;OrderBy=21;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;CategoryIds=[3025,3027];MediaTypes=[22]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GF:GDP:F:ForzaH2 1.5</name>
+          <vui>
+            <visiblephrase>Forza Horizon 2</visiblephrase>
+            <phrase>Forza Horizon 2</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Forza Horizon 2...</message>
+          </vui>
+          <description>Forza Horizon 2</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/48/4d/484d7ab0-cb2b-46fe-9ce8-3875d3a7435c.jpg?n=slot-ForzaHorizon2-174x130-01.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8024d530aa4;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GDP:GDP:GNP: FIFA19</name>
+          <vui>
+            <visiblephrase>FIFA 19</visiblephrase>
+            <phrase>FIFA 19</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching FIFA 19...</message>
+          </vui>
+          <description>FIFA 19</description>
+          <rating>10</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/34/2f/342f652b-ac31-41c1-8ae1-eb9def87bffb.jpg?n=360-FIFA19-174x130-01new.jpg</shallowimg>
+          <condition>!EcoGamePlayed(454109F4)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802454109f9;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GDP:GDP: FIFA</name>
+          <vui>
+            <visiblephrase>FIFA 15</visiblephrase>
+            <phrase>fifa 15</phrase>
+          </vui>
+          <description>FIFA</description>
+          <rating>10</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/43/7b/437b35e2-40c4-415b-91fa-562e849b9a9e.jpg?n=slot-Fifa15-dm-02-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802454109f9;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GF:GDP:FB:ForzaH2 1.5</name>
+          <vui>
+            <visiblephrase>Forza Horizon 2</visiblephrase>
+            <phrase>Forza Horizon 2</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Forza Horizon 2...</message>
+          </vui>
+          <description>Forza Horizon 2</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/48/4d/484d7ab0-cb2b-46fe-9ce8-3875d3a7435c.jpg?n=slot-ForzaHorizon2-174x130-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8024d530aa4;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GF:GDP:F:ScreamR 1.29</name>
+          <vui>
+            <visiblephrase>ScreamRide</visiblephrase>
+            <phrase>screamride</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching ScreamRide...</message>
+          </vui>
+          <description>ScreamRide</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/dc/f0/dcf03e21-17db-4de4-a1b9-8846de9f4457.jpg?n=slot-ScreamRide-02-174x130.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8024d530aa6;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GF:GDP:Borderlands2</name>
+          <vui>
+            <visiblephrase>Borderlands 2</visiblephrase>
+            <phrase>Borderlands 2</phrase>
+          </vui>
+          <description>Borderlands 2</description>
+          <shallowimg>http://compass.xboxlive.com/assets/b5/03/b5030c63-cc4d-49f0-afb2-01354133767a.jpg?n=slot-Borderlands2-dm-174x130-01b.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8025454087c;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GF:GDP:FB:ScreamR 1.29</name>
+          <vui>
+            <visiblephrase>ScreamRide</visiblephrase>
+            <phrase>screamride</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching ScreamRide...</message>
+          </vui>
+          <description>ScreamRide</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/dc/f0/dcf03e21-17db-4de4-a1b9-8846de9f4457.jpg?n=slot-ScreamRide-02-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8024d530aa6;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+    </channeldef>
+  </channel>
+  <channel>
+    <id>Arcade</id>
+    <metadata>
+      <property>
+        <name>SearchContext</name>
+        <value>XboxGameItem</value>
+      </property>
+      <property>
+        <name>VuiContext</name>
+        <value>game</value>
+      </property>
+    </metadata>
+    <channeldef layouttemplate="epix://template18hd.xur">
+      <description>arcade</description>
+      <type>online</type>
+      <vui>
+        <responsetype>Maintain</responsetype>
+        <message>Launching ...</message>
+      </vui>
+      <slotgroup>
+        <slot>
+          <name>Slot 1 - MPA - New Releases</name>
+          <vui>
+            <visiblephrase>New Releases</visiblephrase>
+            <phrase>New Releases</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching New Releases...</message>
+          </vui>
+          <description>New Releases</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_calendar.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_Param=[UserTypes,RatingIds];_SlotCount=100;DetailView=3;CategoryIDs=3027;OrderBy=21;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[23];OfferTargetMediaTypes=[23]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 2 - MPA - A to Z</name>
+          <vui>
+            <visiblephrase>A - Z</visiblephrase>
+            <phrase>A - Z</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching A - Z...</message>
+          </vui>
+          <description>A - Z</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_settingspreferences.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToPamApp</cmd>
+            <param>BuiltIn.Hub.xzp</param>
+            <param2>Provider=Dash.MP.ContentExplorer.lex;Args="_SlotType=Letter;_SceneType=LetterSlotSmallScene;_RootTitle=%slot_description%;_LetterJumpRootTitle=%slot_description%: {1};Slot1='Text=A;Filter=A';Slot2='Text=B;Filter=B';Slot3='Text=C;Filter=C';Slot4='Text=D;Filter=D';Slot5='Text=E;Filter=E';Slot6='Text=F;Filter=F';Slot7='Text=G;Filter=G';Slot8='Text=H;Filter=H';Slot9='Text=I;Filter=I';Slot10='Text=J;Filter=J';Slot11='Text=K;Filter=K';Slot12='Text=L;Filter=L';Slot13='Text=M;Filter=M';Slot14='Text=N;Fi</param2>
+            <param2>lter=N';Slot15='Text=O;Filter=O';Slot16='Text=P;Filter=P';Slot17='Text=Q;Filter=Q';Slot18='Text=R;Filter=R';Slot19='Text=S;Filter=S';Slot20='Text=T;Filter=T';Slot21='Text=U;Filter=U';Slot22='Text=V;Filter=V';Slot23='Text=W;Filter=W';Slot24='Text=X;Filter=X';Slot25='Text=Y;Filter=Y';Slot26='Text=Z;Filter=Z';Slot27='Text=0-9;Filter=[0,1,2,3,4,5,6,7,8,9]';Query=';_MethodName=FindGames;_Param=[UserTypes,RatingIds];DetailView=3;CategoryIds=[3027];OrderBy=1;OrderDirection=1;ImageFormats=4;ImageSizes=2</param2>
+            <param2>3;OfferFilterLevel=2;MediaTypes=[23];OfferTargetMediaTypes=[23];'"</param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GA:GDP:F:MINESM 1.5</name>
+          <vui>
+            <visiblephrase>Minecraft Story Mode</visiblephrase>
+            <phrase>Minecraft Story Mode</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Go on an Epic Minecraft Adventure...</message>
+          </vui>
+          <description>Go on an Epic Minecraft Adventure</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/9a/27/9a27c510-51be-4052-9f8d-5fdbe06793e2.jpg?n=slot-MinecraftStoryMode-01-352x264.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8025841149e;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GA:Q:Limbo_352x264</name>
+          <vui>
+            <visiblephrase>LIMBO</visiblephrase>
+            <phrase>LIMBO</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching LIMBO...</message>
+          </vui>
+          <description>LIMBO</description>
+          <rating>30</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/44/2a/442ae7cc-8641-48a9-965c-ccab00f3a233.jpg?n=slot-Limbo-352x264-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802584109d1;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GA:GDP:FB:MINESM 1.5</name>
+          <vui>
+            <visiblephrase>Minecraft Story Mode</visiblephrase>
+            <phrase>Minecraft Story Mode</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Go on an Epic Minecraft Adventure...</message>
+          </vui>
+          <description>Go on an Epic Minecraft Adventure</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/9a/27/9a27c510-51be-4052-9f8d-5fdbe06793e2.jpg?n=slot-MinecraftStoryMode-01-352x264.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8025841149e;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 4 - MPA - Genre</name>
+          <vui>
+            <visiblephrase>Genre</visiblephrase>
+            <phrase>Genre</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Genre...</message>
+          </vui>
+          <description>Genre</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_SettingsPreferences.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToEpixManifest</cmd>
+            <param>exl-GamesMarketplace-Genres-Arcade.xml</param>
+            <param2></param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 5 - MPA - Most Popular</name>
+          <vui>
+            <visiblephrase>Most Popular</visiblephrase>
+            <phrase>Most Popular</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Most Popular...</message>
+          </vui>
+          <description>Most Popular</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_popular.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_Param=[UserTypes,RatingIds];DetailView=3;CategoryIDs=3027;OrderBy=5;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[23];OfferTargetMediaTypes=[23]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 6 - MPA - Search Games</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Search Games...</message>
+          </vui>
+          <description>Search Games</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_search.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>search:filter=XboxGameItem</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 7 - MPA - Top Trials</name>
+          <vui>
+            <visiblephrase>Top Trials</visiblephrase>
+            <phrase>Top Trials</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Top Trials...</message>
+          </vui>
+          <description>Top Trials</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_gamedemo.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_Param=[UserTypes,RatingIds];DetailView=3;CategoryIDs=3027;OrderBy=20;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[23];OfferTargetMediaTypes=[23]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GA:GDP:F:CivRev 1.5</name>
+          <vui>
+            <visiblephrase>Civilization Revolution</visiblephrase>
+            <phrase>Civilization Revolution</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Civilization Rev...</message>
+          </vui>
+          <description>Civilization Rev</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/06/7a/067a2649-53e5-446c-ab6c-d23c997bf34a.jpg?n=slot-CivilizationRevolution-02-174x130.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802545407e5;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GA:GDP:GNP:CastleCrashers 12.06</name>
+          <vui>
+            <visiblephrase>Castle Crashers</visiblephrase>
+            <phrase>Castle Crashers</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Castle Crashers...</message>
+          </vui>
+          <description>Castle Crashers</description>
+          <rating>30</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/ce/3b/ce3b4feb-623d-44a6-820f-03f240177401.jpg?n=slot-CastleCrashers-01-174x130.jpg</shallowimg>
+          <condition>!EcoGamePlayed(584108B7)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802584108b7;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GA:GDP:StateofDecay 12.06</name>
+          <vui>
+            <visiblephrase>State of Decay</visiblephrase>
+            <phrase>state of decay</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching State of Decay...</message>
+          </vui>
+          <description>State of Decay</description>
+          <rating>40</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/72/dc/72dc0bb2-acbf-4b94-9cc2-b860bc321b66.jpg?n=slot-StateOfDecay-dm-04-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802584111e8;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GA:GDP:FB:CivRev 1.5</name>
+          <vui>
+            <visiblephrase>Civilization Revolution</visiblephrase>
+            <phrase>Civilization Revolution</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Civilization Rev...</message>
+          </vui>
+          <description>Civilization Rev</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/06/7a/067a2649-53e5-446c-ab6c-d23c997bf34a.jpg?n=slot-CivilizationRevolution-02-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802545407e5;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GA:GDP:F:Peggle2 1.5</name>
+          <vui>
+            <visiblephrase>Peggle 2</visiblephrase>
+            <phrase>Peggle 2</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Peggle 2...</message>
+          </vui>
+          <description>Peggle 2</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/10/5b/105b0674-ce4d-44b7-b1ea-e11f4d45bdf7.jpg?n=slot-Peggle2-174x130-04.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d80258411436;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GA:GDP:FB:Peggle2 1.5</name>
+          <vui>
+            <visiblephrase>Peggle 2</visiblephrase>
+            <phrase>Peggle 2</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Peggle 2...</message>
+          </vui>
+          <description>Peggle 2</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/10/5b/105b0674-ce4d-44b7-b1ea-e11f4d45bdf7.jpg?n=slot-Peggle2-174x130-04.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d80258411436;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+    </channeldef>
+  </channel>
+  <channel>
+    <id>On Demand</id>
+    <metadata>
+      <property>
+        <name>SearchContext</name>
+        <value>XboxGameItem</value>
+      </property>
+      <property>
+        <name>VuiContext</name>
+        <value>game</value>
+      </property>
+    </metadata>
+    <channeldef layouttemplate="epix://template18hd.xur">
+      <description>on demand</description>
+      <type>online</type>
+      <vui>
+        <responsetype>Maintain</responsetype>
+        <message>Launching ...</message>
+      </vui>
+      <slotgroup>
+        <slot>
+          <name>Slot 1 - MPO - New Releases</name>
+          <vui>
+            <visiblephrase>New Releases</visiblephrase>
+            <phrase>New Releases</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching New Releases...</message>
+          </vui>
+          <description>New Releases</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_calendar.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_Param=[UserTypes,RatingIds];_SlotCount=100;DetailView=3;CategoryIDs=3027;OrderBy=3;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[1];OfferTargetMediaTypes=[1]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 2 - MPO - A to Z</name>
+          <vui>
+            <visiblephrase>A - Z</visiblephrase>
+            <phrase>A - Z</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching A - Z...</message>
+          </vui>
+          <description>A - Z</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_settingspreferences.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToPamApp</cmd>
+            <param>BuiltIn.Hub.xzp</param>
+            <param2>Provider=Dash.MP.ContentExplorer.lex;Args="_SlotType=Letter;_SceneType=LetterSlotSmallScene;_RootTitle=%slot_description%;_LetterJumpRootTitle=%slot_description%: {1};Slot1='Text=A;Filter=A';Slot2='Text=B;Filter=B';Slot3='Text=C;Filter=C';Slot4='Text=D;Filter=D';Slot5='Text=E;Filter=E';Slot6='Text=F;Filter=F';Slot7='Text=G;Filter=G';Slot8='Text=H;Filter=H';Slot9='Text=I;Filter=I';Slot10='Text=J;Filter=J';Slot11='Text=K;Filter=K';Slot12='Text=L;Filter=L';Slot13='Text=M;Filter=M';Slot14='Text=N;Fi</param2>
+            <param2>lter=N';Slot15='Text=O;Filter=O';Slot16='Text=P;Filter=P';Slot17='Text=Q;Filter=Q';Slot18='Text=R;Filter=R';Slot19='Text=S;Filter=S';Slot20='Text=T;Filter=T';Slot21='Text=U;Filter=U';Slot22='Text=V;Filter=V';Slot23='Text=W;Filter=W';Slot24='Text=X;Filter=X';Slot25='Text=Y;Filter=Y';Slot26='Text=Z;Filter=Z';Slot27='Text=0-9;Filter=[0,1,2,3,4,5,6,7,8,9]';Query=';_MethodName=FindGames;_Param=[UserTypes,RatingIds];DetailView=3;CategoryIds=[3027];OrderBy=1;OrderDirection=1;ImageFormats=4;ImageSizes=2</param2>
+            <param2>3;OfferFilterLevel=2;MediaTypes=[1,21];OfferTargetMediaTypes=[1,21];'"</param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GOD:GDP:F:Portal2 1.5</name>
+          <vui>
+            <visiblephrase>Portal 2</visiblephrase>
+            <phrase>portal 2</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Break the Laws of Physics in Portal 2...</message>
+          </vui>
+          <description>Break the Laws of Physics in Portal 2</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/50/76/5076f5ce-d12c-4c0c-8370-9b430cc38678.jpg?n=slot-Portal2-dm-352x264-01.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d80245410912;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GOD:Q:CallofDuty_352x264 12.06</name>
+          <vui>
+            <visiblephrase>Call of Duty</visiblephrase>
+            <phrase>Call of Duty</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Call of Duty Games...</message>
+          </vui>
+          <description>Call of Duty Games</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/37/71/3771b19a-19f0-488a-9686-f281d8fe7519.jpg?n=slot-CodenameYesterday-BaseGame-01-352x264.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToPamApp</cmd>
+            <param>BuiltIn.Hub.xzp</param>
+            <param2>Provider=Dash.MP.ContentExplorer.lex;Args="_SlotType=Robo;_SceneType=MarketplaceSlot;_RootTitle=Call of Duty;_MethodName=FindGames;_SlotType=DLC;_Param=[UserTypes,RatingIds];DetailView=3;OrderBy=3;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=1;MediaTypes=[1,23,18,24];Products=[66acd000-77fe-1000-9115-d80241560929,66acd000-77fe-1000-9115-d802415607e1,66acd000-77fe-1000-9115-d802415607d1,66acd000-77fe-1000-9115-d80241560914,66acd000-77fe-1000-9115-d802415608fc,66acd000-77fe-1000-</param2>
+            <param2>9115-d802415608cb,66acd000-77fe-1000-9115-d80241560817,66acd000-77fe-1000-9115-d802415607e6,66acd000-77fe-1000-9115-d802415608c3,66acd000-77fe-1000-9115-d80241560855,66acd000-77fe-1000-9115-d8024156081c];"</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GOD:GDP:FB:Portal2 1.5</name>
+          <vui>
+            <visiblephrase>Portal 2</visiblephrase>
+            <phrase>portal 2</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Break the Laws of Physics in Portal 2...</message>
+          </vui>
+          <description>Break the Laws of Physics in Portal 2</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/50/76/5076f5ce-d12c-4c0c-8370-9b430cc38678.jpg?n=slot-Portal2-dm-352x264-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d80245410912;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 4 - MPO - Genre</name>
+          <vui>
+            <visiblephrase>Genre</visiblephrase>
+            <phrase>Genre</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Genre...</message>
+          </vui>
+          <description>Genre</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_SettingsPreferences.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToEpixManifest</cmd>
+            <param>exl-GamesMarketplace-Genres-OnDemand.xml</param>
+            <param2></param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 5 - MPO - Most Popular</name>
+          <vui>
+            <visiblephrase>Most Popular</visiblephrase>
+            <phrase>Most Popular</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Most Popular...</message>
+          </vui>
+          <description>Most Popular</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_popular.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_Param=[UserTypes,RatingIds];DetailView=3;CategoryIDs=3027;OrderBy=5;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[1,21,23];OfferTargetMediaTypes=[1]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 6 - MPO - Search Games</name>
+          <vui>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Search Games...</message>
+          </vui>
+          <description>Search Games</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_search.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>search:filter=XboxGameItem</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>Slot 7 - MPO - Top Trials</name>
+          <vui>
+            <visiblephrase>Top Trials</visiblephrase>
+            <phrase>Top Trials</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Top Trials...</message>
+          </vui>
+          <description>Top Trials</description>
+          <rating>267242991</rating>
+          <deepasset>
+            <format>EpixScene</format>
+            <path>EsLiveTile</path>
+            <param>common://ico_64x_gamedemo.png</param>
+          </deepasset>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamesmp:_RootTitle=%slot_description%;_MethodName=FindGames;_Param=[UserTypes,RatingIds];DetailView=3;CategoryIDs=3027;OrderBy=20;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[1,21];OfferTargetMediaTypes=[1_19]</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GOD:Q:F:LEGO JW 1.5</name>
+          <vui>
+            <visiblephrase>LEGO Games</visiblephrase>
+            <phrase>lego games</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching LEGO Games...</message>
+          </vui>
+          <description>LEGO Games</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/a1/35/a135404e-88c9-48dc-b1dc-6c20ea3e7dcd.jpg?n=slot-LEGO-Jurassic-World-03-174x130.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <condition>EcoLiveTier(none)</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToPamApp</cmd>
+            <param>BuiltIn.Hub.xzp</param>
+            <param2>Provider=Dash.MP.ContentExplorer.lex;Args="_SlotType=Robo;_SceneType=MarketplaceSlot;_SlotType=DLC;_RootTitle=LEGO games;_MethodName=FindGames;_Param=[UserTypes,RatingIds];_OfferTargetMediaTypes=23,18,1;DetailView=3;OrderBy=3;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[1,23];Products=[66acd000-77fe-1000-9115-d8025752084d,66acd000-77fe-1000-9115-d8024c4107f3,66acd000-77fe-1000-9115-d80257520835,66acd000-77fe-1000-9115-d80257520841,66acd000-77fe-1000-9115-d80257520</param2>
+            <param2>845,66acd000-77fe-1000-9115-d80257520812,66acd000-77fe-1000-9115-d80242560802,66acd000-77fe-1000-9115-d8024c4107df];"</param2>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GOD:GDP:HaloReach 174x130</name>
+          <vui>
+            <visiblephrase>GTA</visiblephrase>
+            <phrase>GTA</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Halo: Reach...</message>
+          </vui>
+          <description>Halo: Reach</description>
+          <rating>40</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/cc/f1/ccf16055-0d36-4262-801e-6814c8a4bb49.jpg?n=slot-HaloReach-174x130-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d8024d53085b;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GOD:Q:FB:LEGO JW 1.5</name>
+          <vui>
+            <visiblephrase>LEGO Games</visiblephrase>
+            <phrase>lego games</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching LEGO Games...</message>
+          </vui>
+          <description>LEGO Games</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/a1/35/a135404e-88c9-48dc-b1dc-6c20ea3e7dcd.jpg?n=slot-LEGO-Jurassic-World-03-174x130.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToPamApp</cmd>
+            <param>BuiltIn.Hub.xzp</param>
+            <param2>Provider=Dash.MP.ContentExplorer.lex;Args="_SlotType=Robo;_SceneType=MarketplaceSlot;_SlotType=DLC;_RootTitle=LEGO games;_MethodName=FindGames;_Param=[UserTypes,RatingIds];_OfferTargetMediaTypes=23,18,1;DetailView=3;OrderBy=3;OrderDirection=2;ImageFormats=4;ImageSizes=23;OfferFilterLevel=2;MediaTypes=[1,23];Products=[66acd000-77fe-1000-9115-d8025752084d,66acd000-77fe-1000-9115-d8024c4107f3,66acd000-77fe-1000-9115-d80257520835,66acd000-77fe-1000-9115-d80257520841,66acd000-77fe-1000-9115-d80257520</param2>
+            <param2>845,66acd000-77fe-1000-9115-d80257520812,66acd000-77fe-1000-9115-d80242560802,66acd000-77fe-1000-9115-d8024c4107df];"</param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>GOD:GDP:F:RaymanLegends 9.1</name>
+          <vui>
+            <visiblephrase>Rayman Legends</visiblephrase>
+            <phrase>Rayman Legends</phrase>
+            <phrase>ray man legends</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Rayman Legends...</message>
+          </vui>
+          <description>Rayman Legends</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/4b/86/4b860ea5-9516-4972-9a71-658a6f56fb2f.jpg?n=slot-RaymanLegends-ss-174x130-01.jpg</shallowimg>
+          <condition>EcoIsFamily()</condition>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802555308c3;</param>
+          </onclick>
+        </slot>
+        <slot>
+          <name>GOD:GDP:FB:RaymanLegends 9.1</name>
+          <vui>
+            <visiblephrase>Rayman Legends</visiblephrase>
+            <phrase>Rayman Legends</phrase>
+            <phrase>ray man legends</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Rayman Legends...</message>
+          </vui>
+          <description>Rayman Legends</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/4b/86/4b860ea5-9516-4972-9a71-658a6f56fb2f.jpg?n=slot-RaymanLegends-ss-174x130-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToURI</cmd>
+            <param>gamedetails:66acd000-77fe-1000-9115-d802555308c3;</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+    </channeldef>
+  </channel>
+</manifest>

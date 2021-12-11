@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <id>exl-HELP-on-360</id>
+  <culture>en-US</culture>
+  <sysexts>
+    <sysext>
+      <name>luaext.xex</name>
+      <tag>LUAXZP</tag>
+    </sysext>
+  </sysexts>
+  <webreportingsampling>100</webreportingsampling>
+  <backgroundimage>http://compass.xboxlive.com/assets/eb/73/eb7311c2-8899-49f0-81c5-d1a7eb722390.jpg?n=360-HelpSupport-BG.jpg</backgroundimage>
+  <surface>no</surface>
+  <channel>
+    <id>help-on-360</id>
+    <channeldef layouttemplate="epix://templatestore10hd.xur">
+      <description>Support</description>
+      <type>online</type>
+      <vui>
+        <responsetype>Maintain</responsetype>
+        <message>Launching ...</message>
+      </vui>
+      <slotgroup>
+        <slot>
+          <name>B:HO360:SYS:Membership</name>
+          <vui>
+            <visiblephrase>Update Membership</visiblephrase>
+            <phrase>Update Membership</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Update My Membership...</message>
+          </vui>
+          <description>Update My Membership</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/26/a4/26a4af8c-641b-4a9c-bff9-f032daca30e6.jpg?n=slot-Membershipt-263x197-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToDashApp</cmd>
+            <param>http://epix.xbox.com/shaXam/0204/cb/6c/cb6c37af-1c7d-4f71-b5cd-8284d9e8199f.lzp?v=5</param>
+            <param2>LUAXZP</param2>
+            <param3>streamUrl=mbr://xbl-smooth.xboxlive.com/dash/public/ManageSubscriptionsOnline_NoLogo/stereo/smooth/ManageSubscriptionsOnline_NoLogo.ism/manifest;streamType=adstream</param3>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>B:HO360:SYS:Payment</name>
+          <vui>
+            <visiblephrase>Payment History</visiblephrase>
+            <phrase>Payment History</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Payment Options &amp; History...</message>
+          </vui>
+          <description>Payment Options &amp; History</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/52/1d/521d1145-3b98-4d4a-9bf0-026e1ac6943d.jpg?n=slot-payment-263x197-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcAccountManagement</cmd>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>B:HO360:SYS:Redeem</name>
+          <vui>
+            <visiblephrase>Redeem Code</visiblephrase>
+            <phrase>Redeem Code</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Redeem a Code...</message>
+          </vui>
+          <description>Redeem a Code</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/fb/c0/fbc09edf-0bba-4205-88ac-494ac7cf29e0.jpg?n=slot-Code-263x197-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcAccountManagement</cmd>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>B:HO360:SYS:Password</name>
+          <vui>
+            <visiblephrase>Update Password</visiblephrase>
+            <phrase>Update Password</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Update My Password...</message>
+          </vui>
+          <description>Update My Password</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/4f/27/4f277892-71b2-4288-990c-97291e2a93d0.jpg?n=slot-Password-263x197-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToDashApp</cmd>
+            <param>http://compass.xboxlive.com/assets/1d/dd/1ddd1a77-4d11-4497-83d7-f4535e71d6be.lzp?n=360-UpdatePasswordBBD-v5.lzp</param>
+            <param2>LUAXZP</param2>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>B:HO360:SYS:Profile</name>
+          <vui>
+            <visiblephrase>Update Profile</visiblephrase>
+            <phrase>Update Profile</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Edit My Profile...</message>
+          </vui>
+          <description>Edit My Profile</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/79/4e/794eac8d-b36e-4ff0-8827-c1f77dd954aa.jpg?n=slot-Profile-263x197-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcShowGamerCard</cmd>
+          </onclick>
+        </slot>
+      </slotgroup>
+      <slotgroup>
+        <slot>
+          <name>B:HO360:SYS:ContentSettings</name>
+          <vui>
+            <visiblephrase>Content &amp; Family Settings</visiblephrase>
+            <phrase>Family Settings</phrase>
+            <responsetype>Maintain</responsetype>
+            <message>Launching Content &amp; Family Settings...</message>
+          </vui>
+          <description>Content &amp; Family Settings</description>
+          <rating>267242991</rating>
+          <shallowimg>http://compass.xboxlive.com/assets/f0/8c/f08cb8cd-5eba-4b07-8840-46df6c8ee973.jpg?n=slot-Content-263x197-01.jpg</shallowimg>
+          <onclick>
+            <button>A</button>
+            <helptext>Select</helptext>
+            <action>EpixCmd</action>
+            <cmd>EcNavToPamApp</cmd>
+            <param>dash.familycenter.xex</param>
+          </onclick>
+        </slot>
+      </slotgroup>
+    </channeldef>
+  </channel>
+</manifest>
