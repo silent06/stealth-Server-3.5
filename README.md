@@ -1,4 +1,4 @@
-# stealth-Server-3.0 Linux+XDk Support+No SQL+No need for Visual Studio(Plug & Play)
+# stealth-Server-3.5 Linux+XDk Support+No SQL+No need for Visual Studio(Plug & Play)
 
 
 Review readme.txt found in client files 
