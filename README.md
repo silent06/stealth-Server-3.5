@@ -53,3 +53,5 @@ check stealth to see if its still running with either ps -aux or netstat -tulpn
 
 
 **************DONT FORGET TO OPEN STEALTH PORT THROUGH FIREWALL!*******
+
+*********************Warning not tested with RGH3****************************
